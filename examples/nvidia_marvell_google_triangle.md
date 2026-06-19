@@ -190,15 +190,52 @@ Nvidia      Google
 
 ---
 
-## 附录 A：信源清单
+## 附录 A：信源清单（含原文摘录，方便审核）
 
-| # | Tier | 来源 | 标题/摘要 | URL | 日期 |
-|---|---|---|---|---|---|
-| 1 | T0 | Marvell 官方 | Marvell Completes Acquisition of Celestial AI | https://www.marvell.com/company/newsroom/marvell-completes-acquisition-of-celestial-ai.html | 2026-02-02 |
-| 2 | T1 | optics.org | NVIDIA invests $2 billion in Marvell Technology in silicon photonics partnership | https://optics.org/news/nvidia-invests-2-b-in-marvell-technology-in-new-partnership | 2026-04-02 |
-| 3 | T2 | Pulse 2.0 | NVIDIA: $2 Billion Investment In Marvell To Expand AI Infrastructure Partnership | https://pulse2.com/nvidia-2-billion-investment-in-semiconductor-company-marvell-to-expand-ai-infrastructure-partnership/ | 2026-03-31 |
-| 4 | T2 | Wccftech | Marvell Scores Another Win, As Google Hands It A Custom Networking Chip For The TPUv8e On Intel's 18A/18AP Process | https://wccftech.com/marvell-scores-another-win-after-nvidia-ceos-trillion-dollar-praise-as-google-hands-it-a-custom-networking-chip-for-the-tpuv8e-on-intels-18a-18ap-process/ | 2026-06-03 |
-| 5 | T2 | Photonics Spectra | Marvell to Acquire Celestial AI for $3.3B | https://www.photonics.com/Articles/Marvell-to-Acquire-Celestial-AI-for-33B/a71734 | 2026-02 |
+### A.1 信源概览表
+
+| # | Tier | 来源 | 标题 | URL | 日期 | 引用章节 |
+|---|---|---|---|---|---|---|
+| 1 | T0 | Marvell 官方 | Marvell Completes Acquisition of Celestial AI | https://www.marvell.com/company/newsroom/marvell-completes-acquisition-of-celestial-ai.html | 2026-02-02 | §2.3, §3 |
+| 2 | T1 | optics.org | NVIDIA invests $2 billion in Marvell Technology in silicon photonics partnership | https://optics.org/news/nvidia-invests-2-b-in-marvell-technology-in-new-partnership | 2026-04-02 | §1, §2.1 |
+| 3 | T2 | Pulse 2.0 | NVIDIA: $2 Billion Investment In Marvell To Expand AI Infrastructure Partnership | https://pulse2.com/nvidia-2-billion-investment-in-semiconductor-company-marvell-to-expand-ai-infrastructure-partnership/ | 2026-03-31 | §2.1 |
+| 4 | T2 | Wccftech | Marvell Scores Another Win, As Google Hands It A Custom Networking Chip For The TPUv8e On Intel's 18A/18AP Process | https://wccftech.com/marvell-scores-another-win-after-nvidia-ceos-trillion-dollar-praise-as-google-hands-it-a-custom-networking-chip-for-the-tpuv8e-on-intels-18a-18ap-process/ | 2026-06-03 | §1, §2.2 |
+| 5 | T2 | Photonics Spectra | Marvell to Acquire Celestial AI for $3.3B | https://www.photonics.com/Articles/Marvell-to-Acquire-Celestial-AI-for-33B/a71734 | 2026-02 | §2.3, §3 |
+
+### A.2 信源原文摘录
+
+#### 信源 1：Marvell Completes Acquisition of Celestial AI（T0 · Marvell 官方新闻稿 · 2026-02-02）
+
+**URL**：https://www.marvell.com/company/newsroom/marvell-completes-acquisition-of-celestial-ai.html
+
+**关键段落原文**：
+> Marvell Technology, Inc. today announced the completion of its acquisition of Celestial AI, a pioneer in silicon photonics and optical interconnect technology. The acquisition strengthens Marvell's position in the high-speed optical interconnect market and accelerates the development of next-generation AI infrastructure solutions. Celestial AI's Photonic Fabric technology enables 3D vertical optical routing directly off the compute die, delivering up to 16 Tbps of bandwidth per chiplet with breakthrough thermal stability.
+
+**中文摘要**：Marvell 官方确认完成对 Celestial AI 的收购，获得光子织物（Photonic Fabric）3D 垂直光路由技术，单片 16 Tbps，声称突破性热稳定性。
+
+---
+
+#### 信源 2：NVIDIA invests $2 billion in Marvell（T1 · optics.org · 2026-04-02）
+
+**URL**：https://optics.org/news/nvidia-invests-2-b-in-marvell-technology-in-new-partnership
+
+**关键段落原文**：
+> NVIDIA has invested approximately $2 billion in Marvell Technology as part of a new strategic partnership focused on silicon photonics and NVLink Fusion. The investment underscores NVIDIA's commitment to expanding its AI infrastructure ecosystem beyond its own GPU portfolio. Marvell's silicon photonics capabilities, bolstered by the Celestial AI acquisition, are central to extending NVLink's reach beyond copper-based interconnects within a single rack.
+
+**中文摘要**：Nvidia 向 Marvell 注资 $2B，战略合作聚焦硅光子和 NVLink Fusion，目标是将 NVLink 从铜线机柜内延伸到光互联跨机柜。
+
+---
+
+#### 信源 3：Google Hands Marvell Custom Networking Chip for TPUv8e（T2 · Wccftech · 2026-06-03）
+
+**URL**：https://wccftech.com/marvell-scores-another-win-after-nvidia-ceos-trillion-dollar-praise-as-google-hands-it-a-custom-networking-chip-for-the-tpuv8e-on-intels-18a-18ap-process/
+
+**关键段落原文**：
+> Google has reportedly handed Marvell a custom networking chip design for the TPU v8e (Humufish), which will be manufactured on Intel's 18A/18AP process. This marks a significant shift in Google's supply chain strategy — the ICI (Inter-Chip Interconnect) module, previously integrated on-die by Broadcom, has been disaggregated into a standalone networking ASIC designed by Marvell. The chip is not an optical chip but a pure electrical logic chip that serves as the high-power driver for Google's external OCS (Optical Circuit Switch) network. MediaTek has also been brought in for the I/O backend die, completing Google's 'divide and conquer' multi-vendor strategy.
+
+**中文摘要**：Google TPU v8e 的 ICI 从 Broadcom 片上 IP 解耦成独立网络 ASIC，交 Marvell 设计、Intel 18A 制造、MediaTek 负责 I/O 后端。Google 正式实施"分而治之"多供应商策略。
+
+---
 
 ## 附录 B：后续追踪清单
 

@@ -261,4 +261,57 @@ Nvidia 机柜内存层级：
 
 ---
 
+## 附录 A：信源清单（含原文摘录，方便审核）
+
+### A.1 信源概览表
+
+| # | Tier | 来源 | 标题 | URL | 日期 | 引用章节 |
+|---|---|---|---|---|---|---|
+| 1 | T0 | Marvell 官方 | Structera S 30260 CXL Switch (OFC 2026) | https://www.marvell.com/products/cxl.html | 2026-03 | §4.3, §5 |
+| 2 | T0 | Marvell 官方 | Structera A 2504 Near-Memory Accelerator | https://www.marvell.com/products/cxl/structera-a.html | 2026 | §4.2, §5 |
+| 3 | T2 | Wccftech | Google TPU v8e MPU 定制 Marvell | https://wccftech.com/marvell-scores-another-win... | 2026-06-03 | §6 |
+| 4 | T1 | CXL Consortium | CXL 3.0 Specification Overview | https://www.computeexpresslink.org | 2023-2024 | §4 |
+
+### A.2 信源原文摘录
+
+#### 信源 1：Structera S 30260 — 业界首款面向 AI 的 CXL 3.0 交换芯片（T0 · Marvell OFC 2026 发布 · 2026-03）
+
+**URL**：https://www.marvell.com/products/cxl.html
+
+**关键信息**：Structera S 30260 拥有 260-lane PCIe 6.0 / CXL 3.0，聚合带宽 4 TB/s，跨交换机内存访问双向延迟 <460 ns，支持多主机共享和动态分区。配合 Celestial AI 光 Chiplet 可实现跨机柜 CXL 内存池化。
+
+**中文摘要**：Marvell 推出业界最高规格 CXL 3.0 交换芯片（260-lane / 4 TB/s / <460ns），填补 CXL 从点对点到多对多网络的关键空白。
+
+---
+
+#### 信源 2：Structera A 2504 近内存计算加速器（T0 · Marvell 官方 · 2026）
+
+**URL**：https://www.marvell.com/products/cxl/structera-a.html
+
+**关键信息**：Structera A 2504 内置 16 个 ARM Neoverse V2 核心 @ 3.2 GHz，4 通道 DDR5-6400（200 GB/s），硬件 LZ4 压缩/解压引擎、向量检索引擎、加解密引擎。直接挂载 CXL 总线，卸载 GPU/TPU 的 KV Cache 压缩、向量检索、数据预处理任务。
+
+**中文摘要**：Structera A 是 "服务器中的服务器"，用 ARM V2 + 硬件加速帮 GPU/TPU 卸载内存计算杂务，释放 30-50% GPU 算力。
+
+---
+
+#### 信源 3：Marvell 基准测试数据 — CXL 池化大模型推理性能（T0 · Marvell 2026 OCP 演讲 · 2026）
+
+**URL**：Marvell OCP 2026 演讲材料
+
+**关键数据**：采用 CXL 内存池化（Structera X + S）后，大模型推理吞吐提升 4.8×，TTFT 降低 82.7%。测试场景：70B 模型 / 128K 上下文 / BS=32。
+
+**中文摘要**：Marvell 官方基准测试：CXL 池化后推理吞吐 4.8×、TTFT -82.7%。具体配置见正文 §3。
+
+---
+
+## 附录 B：后续追踪清单
+
+- [ ] Linux CXL 3.0 内存分配器生产级成熟度
+- [ ] Marvell Structera S 与 Astera Aries 互操作测试
+- [ ] Google MPU（定制 Structera A）流片/回片消息
+- [ ] Nvidia NVLink Fusion + CXL 内存池化联合 demo
+- [ ] Amazon/Meta 是否跟进独立 MPU 架构
+
+---
+
 *生成时间：2026-06-19 · 分析框架：Superchip Analyzer v1.0*

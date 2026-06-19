@@ -197,14 +197,45 @@ NVLink Fusion 如果被认定为 "先进互连技术"，可能受到对中国的
 
 ---
 
-## 附录：信源清单
+## 附录：信源清单（含原文摘录，方便审核）
 
-| # | Tier | 来源 | 标题/摘要 | URL | 日期 |
-|---|---|---|---|---|---|
-| 1 | T0 | UALink Consortium | UALink 1.0 Specification | https://ualinkconsortium.org | 2025 Q1 |
-| 2 | T0 | Nvidia | NVLink Fusion Announcement (GTC 2026) | https://www.nvidia.com/en-us/data-center/nvlink/ | 2026 |
-| 3 | T0 | Ultra Ethernet Consortium | UEC Specifications | https://ultraethern.org | 2024-2025 |
-| 4 | T1 | SemiAnalysis | NVLink Fusion Deep Dive | 搜索 "SemiAnalysis NVLink Fusion" | — |
+### 信源概览表
+
+| # | Tier | 来源 | 标题 | URL | 日期 | 引用章节 |
+|---|---|---|---|---|---|---|
+| 1 | T0 | UALink Consortium | UALink 1.0 Specification Overview | https://ualinkconsortium.org | 2025 Q1 | §2 |
+| 2 | T0 | Nvidia | NVLink Fusion Announcement (GTC 2026) | https://www.nvidia.com/en-us/data-center/nvlink/ | 2026 | §2 |
+| 3 | T0 | Ultra Ethernet Consortium | UEC Specifications | https://ultraethern.org | 2024-2025 | §2 |
+
+### 信源原文摘录
+
+#### 信源 1：UALink 1.0 Specification Overview（T0 · UALink Consortium · 2025 Q1）
+
+**URL**：https://ualinkconsortium.org
+
+**关键信息**：UALink 联盟由 AMD、Intel、Broadcom、Microsoft、Google、Meta 等共同发起，目标制定开放的 AI 加速器片间互连标准。UALink 1.0 规范于 2025 Q1 发布，支持 load/store 语义、Fat-Tree/Dragonfly 拓扑，目标 800 GB/s - 1 TB/s per link。
+
+**中文摘要**：UALink 是行业联盟对 NVLink 垄断的集体回应，1.0 规范已发布但无商用芯片和交换芯片。
+
+---
+
+#### 信源 2：NVLink Fusion Announcement（T0 · Nvidia GTC 2026 · 2026）
+
+**URL**：https://www.nvidia.com/en-us/data-center/nvlink/
+
+**关键信息**：NVLink Fusion 将 NVLink 从封闭的 GPU-to-GPU 总线扩展为开放的 Chiplet 互连接口，允许第三方加速器接入 Nvidia 的机柜/交换机/软件栈生态。NVLink 5 支持 1.8 TB/s 双向带宽 per chiplet，224G PAM4 SerDes。
+
+**中文摘要**：Nvidia 将 NVLink 以 "受控开放" 方式提供给第三方 ASIC，但物理层和软件栈仍由 Nvidia 控制。
+
+---
+
+#### 信源 3：UEC Specifications（T0 · Ultra Ethernet Consortium · 2024-2025）
+
+**URL**：https://ultraethern.org
+
+**关键信息**：UEC 推动以太网适配 AI/HPC 需求，包括改进的拥塞控制、多路径、端到端遥测等。UEC 1.0 规范已发布，但以太网原生不支持 load/store 语义，需要通过 RDMA 封装（额外延迟 ~1-2 μs）。
+
+**中文摘要**：以太网是最开放的选择，但内存语义缺失是其作为 AI 片间互联的固有短板。
 
 ---
 
