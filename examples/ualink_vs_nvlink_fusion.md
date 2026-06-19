@@ -197,9 +197,9 @@ NVLink Fusion 如果被认定为 "先进互连技术"，可能受到对中国的
 
 ---
 
-## 附录：信源清单（含原文摘录，方便审核）
+## 附录 A：信源清单（含原文摘录，方便审核）
 
-### 信源概览表
+### A.1 信源概览表
 
 | # | Tier | 来源 | 标题 | URL | 日期 | 引用章节 |
 |---|---|---|---|---|---|---|
@@ -207,7 +207,7 @@ NVLink Fusion 如果被认定为 "先进互连技术"，可能受到对中国的
 | 2 | T0 | Nvidia | NVLink Fusion Announcement (GTC 2026) | https://www.nvidia.com/en-us/data-center/nvlink/ | 2026 | §2 |
 | 3 | T0 | Ultra Ethernet Consortium | UEC Specifications | https://ultraethern.org | 2024-2025 | §2 |
 
-### 信源原文摘录
+### A.2 信源原文摘录
 
 #### 信源 1：UALink 1.0 Specification Overview（T0 · UALink Consortium · 2025 Q1）
 
@@ -236,6 +236,16 @@ NVLink Fusion 如果被认定为 "先进互连技术"，可能受到对中国的
 **关键信息**：UEC 推动以太网适配 AI/HPC 需求，包括改进的拥塞控制、多路径、端到端遥测等。UEC 1.0 规范已发布，但以太网原生不支持 load/store 语义，需要通过 RDMA 封装（额外延迟 ~1-2 μs）。
 
 **中文摘要**：以太网是最开放的选择，但内存语义缺失是其作为 AI 片间互联的固有短板。
+
+---
+
+## 附录 B：后续追踪清单
+
+- [ ] UALink 首款交换芯片流片/发布消息（Broadcom 或 Marvell？）
+- [ ] NVLink Fusion 首个第三方 ASIC 客户公布
+- [ ] Celestial AI 光 Chiplet 量产时间表（决定跨机柜 Scale-up 路线选择）
+- [ ] UEC 2.0 规范是否引入内存语义（load/store）支持
+- [ ] 自研 ASIC 厂商（Amazon/Meta/字节）的互连协议选择
 
 ---
 
